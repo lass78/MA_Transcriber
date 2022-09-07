@@ -130,3 +130,6 @@ dmypy.json
 
 # ignore video files
 .mp4
+
+# dont upload credentials
+credentials.json

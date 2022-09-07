@@ -5,14 +5,14 @@ import json
 username = os.environ.get("DR_USERNAME")
 password = os.environ.get("DR_PW")
 
-print (username)
-print (password)
+# print (username)
+# print (password)
 
 prodn = "00102200330"
 
 
 
-def get_mp4(item):
+def get_mp4_url(item):
     
     videos = item['media_object_group'][0]['media_object'][0]['mob_instance']
 
@@ -20,11 +20,14 @@ def get_mp4(item):
     for video in videos:
         if video['min_fmt_mime_type'] == 'mp4':
             url = video['min_location_url']
-         
-    
-    return url
+    return url         
+
+def get_mp4_as_bytes(url):
     r = requests.get(url)
+    return r.content
     
+    
+
 
     with open('video.mp4', 'wb') as f:  # use `"b"` to open in `bytes mode`
         print("downloading")
@@ -45,7 +48,6 @@ def get_item(id):
 
     return json.loads(response.text)
 
-id = "12307995"
 
 # with open("example.json", "w") as f:
 #     f.write(response.text)
@@ -60,27 +62,29 @@ def search(string):
     return json.loads(response.text)
     
 
-tvavisen = "00122241430"
+if __name__ == '__main__':
+
+    id = "12307995"
 
 
-result = search(tvavisen)
-for item in result['Items']:
-    if item['itm_has_material']:
-        print (item['itm_title'])
+    tvavisen = "00122241430"
 
 
-print (len(result['Items']))
-# print(result)
+    result = search(tvavisen)
+    for item in result['Items']:
+        if item['itm_has_material']:
+            print (item['itm_title'])
 
-# with open("example.json", "w") as f:
-#     f.write(search(tvavisen))
+
+    print (len(result['Items']))
+    # print(result)
+
+    # with open("example.json", "w") as f:
+    #     f.write(search(tvavisen))
 
 
-item = get_item(id)
-print(type(item))
 
-print (get_mp4(item))
 
-# with open('tmp_item.json', 'w') as f:
-#     f.write(item)    
+    # with open('tmp_item.json', 'w') as f:
+    #     f.write(item)    
 

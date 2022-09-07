@@ -1,5 +1,5 @@
 import streamlit as st
-from MA_api import get_item, get_mp4
+from MA_api import get_item, get_mp4_url
 
 st.title("MA Transcriber (BETA)")
 id = st.text_input("indtast eller kopier id-nummer fra MA")
@@ -9,7 +9,8 @@ id = st.text_input("indtast eller kopier id-nummer fra MA")
 
 
 item = get_item(id)
-mp4 = get_mp4(item)
+print (item)
+mp4 = get_mp4_url(item)
 
 st.video(mp4)
 
