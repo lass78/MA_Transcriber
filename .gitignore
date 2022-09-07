@@ -133,3 +133,4 @@ dmypy.json
 
 # dont upload credentials
 credentials.json
+secrets.toml
