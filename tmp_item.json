@@ -1,0 +1,214 @@
+{
+    "itm_archive_comment": null,
+    "itm_archive_date": null,
+    "itm_create_timestamp": "2022-09-06 13:56:37",
+    "itm_creator_usr": {
+        "usr_ad_guid": null,
+        "usr_display_name": "svcLiveU",
+        "usr_login_name": "net\\svcliveu",
+        "usr_rights_xml": null,
+        "usr_id": 68936
+    },
+    "itm_deleted_from_source": false,
+    "itm_description": null,
+    "itm_digitized_timestamp": "2022-09-06 13:56:37",
+    "itm_drams_id": "DR\\\\Mediearkivet\\\\ITM\\12307995",
+    "itm_email": null,
+    "itm_istemplate": false,
+    "itm_killdate": "2022-12-05 00:00:00",
+    "itm_number": 1,
+    "itm_owner_usr": {
+        "usr_ad_guid": null,
+        "usr_display_name": "svcLiveU",
+        "usr_login_name": "net\\svcliveu",
+        "usr_rights_xml": null,
+        "usr_id": 68936
+    },
+    "itm_private_ugp": null,
+    "itm_private_usr": null,
+    "itm_rights_description": null,
+    "itm_rights_url": null,
+    "itm_soft_deleted": false,
+    "itm_source_url": "Live-U Integration",
+    "itm_technical_comment": "Unit: 302113-22524\nChannel: liveu-mmh1_channel3",
+    "itm_title": "indland_solroed_gadelys_20220906_114921",
+    "itm_title_alt": null,
+    "itm_update_timestamp": "2022-09-06 14:04:39",
+    "itm_update_by_usr": {
+        "usr_ad_guid": null,
+        "usr_display_name": "svcLiveU",
+        "usr_login_name": "net\\svcliveu",
+        "usr_rights_xml": null,
+        "usr_id": 68936
+    },
+    "archive_status": {
+        "ars_code": "Ikke arkiveret",
+        "ars_description": "Ikke arkiveret / ikke vurderet",
+        "ars_id": 1
+    },
+    "category": {
+        "cat_code": "ukendt",
+        "cat_description": "ukendt",
+        "cat_id": 480
+    },
+    "location": null,
+    "location_text": null,
+    "coverage_spatial_location": null,
+    "coverage_spatial_location_text": null,
+    "languagerel": null,
+    "media_object_group": [
+        {
+            "mog_1st_tx_timestamp": null,
+            "mog_create_timestamp": "2022-09-06 13:56:37",
+            "mog_duration": "00:11:26.280",
+            "mog_isprotected": false,
+            "mog_number": 1,
+            "mog_start_timecode": "00:00:00.000",
+            "mog_stop_timecode": "00:11:26.280",
+            "mog_update_timestamp": null,
+            "mog_version": 1,
+            "mog_version_name": null,
+            "classification": {
+                "cla_code": "R�materiale",
+                "cla_description": "R�materiale",
+                "cla_id": 165
+            },
+            "expression": null,
+            "media_object": [
+                {
+                    "mob_1st_tx_timestamp": null,
+                    "mob_characteristics": null,
+                    "mob_create_timestamp": "2022-09-06 13:56:37",
+                    "mob_smpte_umid": "060a2b3401010101010101101300000014f9a019828950b50a04000000000000",
+                    "mob_type": {
+                        "mot_code": "V",
+                        "mot_name_uk": "Video",
+                        "mot_name_dk": "Video",
+                        "mot_id": 2
+                    },
+                    "mob_subtype": null,
+                    "aspect_ratio": {
+                        "asp_code": "16:9",
+                        "asp_description": "16:9",
+                        "asp_id": 1
+                    },
+                    "mob_physical_location": null,
+                    "mob_physical_location_id": null,
+                    "source_audio_recording_type": {
+                        "art_code": "Stereo",
+                        "art_description": "Stereo",
+                        "art_id": 2
+                    },
+                    "subtitles_information": null,
+                    "mob_instance": [
+                        {
+                            "min_create_timestamp": "2022-09-06 13:56:37",
+                            "min_drams_id": "DR\\\\Mediearkivet\\\\MIN\\42803495",
+                            "min_physical_location": null,
+                            "min_physical_location_id": null,
+                            "min_fmt_audio_channels": 8.0,
+                            "min_fmt_bitrate": 60175216,
+                            "min_fmt_codec": "MXF OP-1a (XDCAM HD422)",
+                            "min_fmt_mime_type": "video/MPV",
+                            "min_fmt_picture_width": 1920,
+                            "min_fmt_picture_height": 1080,
+                            "min_fmt_size": 5162130832,
+                            "min_fmt_color_space": "YUV 4:2:2 (BT.709/BT.709/BT.709)",
+                            "min_fmt_bit_depth": 8,
+                            "min_fmt_frames_per_second": 25.0,
+                            "min_isstoredinline": false,
+                            "min_location_url": "http://malrcifs01.net.dr.dk/highres/pp/XDCAMHD/2022/09/06/IngestFile-42803495.mxf",
+                            "min_update_timestamp": null,
+                            "physical_format": {
+                                "phf_code": "PGF",
+                                "phf_description": "Default physical format",
+                                "phf_id": 1
+                            },
+                            "media_codec": {
+                                "mco_code": "XDCAMHD",
+                                "mco_description": "XDCAMHD",
+                                "mco_id": 20
+                            },
+                            "scan_type": {
+                                "sct_code": "INTERLACED",
+                                "sct_description": "Interlaced video scanning",
+                                "sct_id": 1
+                            },
+                            "min_data": null,
+                            "min_id": 42803495
+                        },
+                        {
+                            "min_create_timestamp": "2022-09-06 13:56:38",
+                            "min_drams_id": "DR\\\\Mediearkivet\\\\MIN\\42803496",
+                            "min_physical_location": null,
+                            "min_physical_location_id": null,
+                            "min_fmt_audio_channels": 2.0,
+                            "min_fmt_bitrate": 1631817,
+                            "min_fmt_codec": "H264",
+                            "min_fmt_mime_type": "mp4",
+                            "min_fmt_color_space": null,
+                            "min_isstoredinline": false,
+                            "min_location_url": "http://malrcifs01.net.dr.dk/lowres/H264/2022/09/06/IngestFile-42803495.mp4",
+                            "min_update_timestamp": null,
+                            "physical_format": {
+                                "phf_code": "PGF",
+                                "phf_description": "Default physical format",
+                                "phf_id": 1
+                            },
+                            "media_codec": {
+                                "mco_code": "H264",
+                                "mco_description": "H264",
+                                "mco_id": 19
+                            },
+                            "scan_type": {
+                                "sct_code": "PROGRESSIVE",
+                                "sct_description": "Progressive video scanning",
+                                "sct_id": 2
+                            },
+                            "min_data": null,
+                            "min_id": 42803496
+                        }
+                    ],
+                    "timecode_description": null,
+                    "mob_id": 20244085
+                }
+            ],
+            "mog_id": 15710000
+        }
+    ],
+    "namerel": null,
+    "publisher": {
+        "pbl_code": "DR",
+        "pbl_description": "DR",
+        "pbl_id": 1
+    },
+    "registration_level": {
+        "rle_code": "Undervejs",
+        "rle_text": "Undervejs",
+        "rle_id": 1
+    },
+    "subjectrel": null,
+    "tx_type": {
+        "txt_code": "TV",
+        "txt_description": "Television",
+        "txt_id": 1
+    },
+    "rightscode": {
+        "ric_code": "A",
+        "ric_text": "Kan genudsendes og genanvendes (i uddrag) efter god skik og brug",
+        "ric_id": 1
+    },
+    "office": {
+        "off_code": "Redaktion ukendt",
+        "off_description": "Redaktion ukendt",
+        "off_id": 41
+    },
+    "external_site": null,
+    "department": {
+        "dep_code": "DR Nyheder",
+        "dep_description": "DR Nyheder",
+        "dep_id": 120
+    },
+    "itm_id": 12307995,
+    "hasMaterial": true
+}
