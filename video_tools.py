@@ -31,22 +31,29 @@ def decode_audio(in_filename, **input_kwargs):
 
 if __name__ == "__main__":
     id = "12309293" # brian vad kort
+    # id = "12309875" # brian vad 1min
+    # id = "12369861" # inflationsekspert 2min
+    # id = "12369862" # indlationsekspert 10min
+    # id = "12368871" # elise rimpler 16min
+    id = "12370323" #russian voxpops
+    id = "12370245" # venezuela flood
     item = get_item(id)
-    print(item)
+    print(item['itm_title'])
     video_url = get_mp4_url(item)
     print(video_url)
 
-    bytes = get_mp4_as_bytes(video_url)
-
     print("downloadning")
-    # input = ffmpeg.input(bytes)
-    
-    
+    # bytes = get_mp4_as_bytes(video_url)
     mp_file = VideoFileClip(video_url)
+    # mp_file.write_videofile("large/" + item['itm_title'] + ".mp4")
     print('Finished downloadning')
+    
+
     audio = mp_file.audio
-    print (type(audio))
-    audio.write_audiofile('test.wav')
+    print (audio)
+    audio.write_audiofile(item['itm_title'] + '_l.mp3', ffmpeg_params=['-map_channel', '0.0.0'])
+    audio.write_audiofile(item['itm_title'] +'_r.mp3', ffmpeg_params=['-map_channel', '0.0.1'])
+
     # print (input.audio)
      
     # v = VideoConvert(input)

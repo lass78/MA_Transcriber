@@ -2,9 +2,10 @@ import streamlit as st
 from MA_api import get_item, get_mp4_url
 
 st.title("MA Transcriber (BETA)")
+
+id = "12307995"
 id = st.text_input("indtast eller kopier id-nummer fra MA")
 
-# id = "12307995"
 
 
 
