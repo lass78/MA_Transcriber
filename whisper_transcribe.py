@@ -1,23 +1,21 @@
-import whisper
+from io import BytesIO
+import base64
+import banana_dev as banana
+import os
 
-model = whisper.load_model("medium")
+apikey = os.environ["BANANA_API_KEY"]
+modelkey = os.environ["BANANA_MODEL_KEY"]
+
+def get_transcription(filename, language=None, task=None):
+
+#Needs test.mp3 file in directory
+    with open(filename,'rb') as file:
+        mp3bytes = BytesIO(file.read())
+    mp3 = base64.b64encode(mp3bytes.getvalue()).decode("ISO-8859-1")
+    model_payload = {"mp3BytesString":mp3, 'language':language, 'task':task}
 
 
-# load audio and pad/trim it to fit 30 seconds
-audio = whisper.load_audio("long_test_l.wav")
-audio = whisper.pad_or_trim(audio)
+    result = banana.run(apikey, modelkey, model_payload)['modelOutputs'][0]
 
-# make log-Mel spectrogram and move to the same device as the model
-mel = whisper.log_mel_spectrogram(audio).to(model.device)
-
-# detect the spoken language
-_, probs = model.detect_language(mel)
-print(f"Detected language: {max(probs, key=probs.get)}")
-
-# decode the audio
-options = whisper.DecodingOptions(fp16 = False)
-result = whisper.decode(model, mel, options)
-
-# print the recognized text
-print(result.text)
-print(result)
+    return result
+    

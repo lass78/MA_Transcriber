@@ -5,13 +5,6 @@ import json
 username = os.environ.get("DR_USERNAME")
 password = os.environ.get("DR_PW")
 
-# print (username)
-# print (password)
-
-prodn = "00102200330"
-
-
-
 def get_mp4_url(item):
     
     videos = item['media_object_group'][0]['media_object'][0]['mob_instance']
@@ -25,20 +18,7 @@ def get_mp4_url(item):
 def get_mp4_as_bytes(url):
     r = requests.get(url)
     return r.content
-    
-    
-
-
-    with open('video.mp4', 'wb') as f:  # use `"b"` to open in `bytes mode`
-        print("downloading")
-        f.write(r.content)
-        return f
-        print("finished downloading")
-
-
-
-
-    # return (item['media_object_group'][0]['media_object'][0]['mob_instance'])    
+       
 
 def get_item(id):
     baseurl = "http://mawsc:8000/ma/api/items/"
@@ -47,11 +27,6 @@ def get_item(id):
     response.encoding ='utf-8'
 
     return json.loads(response.text)
-
-
-# with open("example.json", "w") as f:
-#     f.write(response.text)
-
 
 def search(string):
     baseurl = "http://mawsc:8000/ma/api/search?q="
